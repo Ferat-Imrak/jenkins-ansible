@@ -1,0 +1,13 @@
+---
+- hosts: jenkins-ansible
+  tasks:
+  - name: Installing jenkins on CentOS Virtual Machine
+    import_role:
+      name: ansible-role-jenkins
+
+  - name: Installing jenkins on CentOS Virtual Machine
+    import_role:
+      name: ansible-role-plugins
+
+    vars:
+      hostname: "{{ inventory_hostname }}"

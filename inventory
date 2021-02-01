@@ -1,0 +1,2 @@
+[jenkins-ansible]
+jenkins-centos    ansible_host=167.99.232.11

@@ -1,0 +1,13 @@
+---
+- name: Install pipeline plugins
+  jenkins_plugin:
+    name: ansbile
+    url: "http://167.99.232.11:8080/"
+    url_username: "{{ admin_user }}"
+    url_password: "{{ admin_pass }}"
+    state: enabled
+    # register: plugin_result
+    # unit: plugin_result is success
+    # with_items:
+    #   - { key: "build-tools"}
+    
